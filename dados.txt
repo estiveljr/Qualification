@@ -1,0 +1,85 @@
+4 16 2 2 44 
+SP
+MG
+SC
+PE
+OpA -20 -
+OpB -20 -
+DpA 20 -
+DpB 20 - 
+Forn_a 0 SP
+Forn_b 0 SC
+cd_a_in 0 SP
+cd_a_out 0 SP
+cd_b_in 0 SC
+cd_b_out 0 SC
+cd_c_in 0 PE
+cd_c_out 0 PE
+c1 0 SC
+c2 0 SP
+c3 0 PE
+c4 0 MG
+pA
+pB
+SC pA 2
+PE pB 2
+OpA cd_a_in pA 20 0 10 7 0
+OpA cd_b_in pA 20 0 10 7 0
+OpA cd_c_in pA 20 0 10 10 0
+cd_a_in cd_a_out pA 20 100 0 0 0
+cd_b_in cd_b_out pA 20 100 0 0 0
+cd_c_in cd_c_out pA 10 10 0 0 0
+cd_a_out c1 pA 20 0 15 10 0
+cd_a_out c2 pA 20 0 15 10 0
+cd_a_out c3 pA 20 0 15 10 0
+cd_a_out c4 pA 20 0 15 10 0
+cd_b_out c1 pA 20 0 15 10 0
+cd_b_out c2 pA 20 0 15 10 0
+cd_b_out c3 pA 20 0 15 10 0
+cd_b_out c4 pA 20 0 15 10 0
+cd_c_out c1 pA 20 0 15 10 0
+cd_c_out c2 pA 20 0 15 10 0
+cd_c_out c3 pA 20 0 15 10 0
+cd_c_out c4 pA 20 0 15 10 0
+c1 DpA pA 5 0 15 10 0
+c2 DpA pA 5 0 15 10 0
+c3 DpA pA 5 0 15 10 0
+c4 DpA pA 5 0 15 10 0
+OpB cd_a_in pB 20 0 10 7 0
+OpB cd_b_in pB 20 0 10 7 0
+OpB cd_c_in pB 20 0 10 10 0
+cd_a_in cd_a_out pB 20 100 0 0 0
+cd_b_in cd_b_out pB 20 100 0 0 0
+cd_c_in cd_c_out pB 10 10 0 0 0
+cd_a_out c1 pB 20 0 15 10 0
+cd_a_out c2 pB 20 0 15 10 0
+cd_a_out c3 pB 20 0 15 10 0
+cd_a_out c4 pB 20 0 15 10 0
+cd_b_out c1 pB 20 0 15 10 0
+cd_b_out c2 pB 20 0 15 10 0
+cd_b_out c3 pB 20 0 15 10 0
+cd_b_out c4 pB 20 0 15 10 0
+cd_c_out c1 pB 20 0 15 10 0
+cd_c_out c2 pB 20 0 15 10 0
+cd_c_out c3 pB 20 0 15 10 0
+cd_c_out c4 pB 20 0 15 10 0
+c1 DpB pB 5 0 15 0 0
+c2 DpB pB 5 0 15 0 0
+c3 DpB pB 5 0 15 0 0
+c4 DpB pB 5 0 15 0 0
+
+M N K A C
+linha única com um binário para cada UF, sendo 1 para UF com crédito presumido e 0 para UF sem crédito presumido
+linha única com a quantidade de vértices de cada UF
+M linhas com: ID da UF | binário de crédito presumido
+N linhas com: ID do vértice (str) | demanda no vértice (dec) | UF do vértice = {0,1,3,...,n}
+K linhas com: ID do produto (str)
+A linhas com: origem | destino | produto | capacidade | custofixo | custo var (frete ou cd) | custo var icms | crédito presumido (bool)
+C linhas com: UF | produto | custo icms com crédito presumido (apenas os pares que possuem crésito presumido)
+
+'M: (int+) quantidade de UF
+'N: (int+) quantidade de vértices(CD, loja, cidade/cliente); 
+'K: (int+) quantidade de produtos;
+'A: (int+) quantidade  de arcos 
+'O(k) e D(k) retornam apenas um vértice, porém um produto pode ter mais de uma origem ou destino
+'C: quantidade de pares UF-produto que possuem crédito presumido
