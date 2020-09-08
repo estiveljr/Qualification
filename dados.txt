@@ -3,10 +3,10 @@ SP
 MG
 SC
 PE
-OpA -20 -
-OpB -20 -
-DpA 20 -
-DpB 20 - 
+O(A) -20 -
+O(B) -20 -
+D(A) 20 -
+D(B) 20 -
 Forn_a 0 SP
 Forn_b 0 SC
 cd_a_in 0 SP
@@ -19,54 +19,54 @@ c1 0 SC
 c2 0 SP
 c3 0 PE
 c4 0 MG
-pA
-pB
-SC pA 2
-PE pB 2
-OpA cd_a_in pA 20 0 10 7 0
-OpA cd_b_in pA 20 0 10 7 0
-OpA cd_c_in pA 20 0 10 10 0
-cd_a_in cd_a_out pA 20 100 0 0 0
-cd_b_in cd_b_out pA 20 100 0 0 0
-cd_c_in cd_c_out pA 10 10 0 0 0
-cd_a_out c1 pA 20 0 15 10 0
-cd_a_out c2 pA 20 0 15 10 0
-cd_a_out c3 pA 20 0 15 10 0
-cd_a_out c4 pA 20 0 15 10 0
-cd_b_out c1 pA 20 0 15 10 0
-cd_b_out c2 pA 20 0 15 10 0
-cd_b_out c3 pA 20 0 15 10 0
-cd_b_out c4 pA 20 0 15 10 0
-cd_c_out c1 pA 20 0 15 10 0
-cd_c_out c2 pA 20 0 15 10 0
-cd_c_out c3 pA 20 0 15 10 0
-cd_c_out c4 pA 20 0 15 10 0
-c1 DpA pA 5 0 15 10 0
-c2 DpA pA 5 0 15 10 0
-c3 DpA pA 5 0 15 10 0
-c4 DpA pA 5 0 15 10 0
-OpB cd_a_in pB 20 0 10 7 0
-OpB cd_b_in pB 20 0 10 7 0
-OpB cd_c_in pB 20 0 10 10 0
-cd_a_in cd_a_out pB 20 100 0 0 0
-cd_b_in cd_b_out pB 20 100 0 0 0
-cd_c_in cd_c_out pB 10 10 0 0 0
-cd_a_out c1 pB 20 0 15 10 0
-cd_a_out c2 pB 20 0 15 10 0
-cd_a_out c3 pB 20 0 15 10 0
-cd_a_out c4 pB 20 0 15 10 0
-cd_b_out c1 pB 20 0 15 10 0
-cd_b_out c2 pB 20 0 15 10 0
-cd_b_out c3 pB 20 0 15 10 0
-cd_b_out c4 pB 20 0 15 10 0
-cd_c_out c1 pB 20 0 15 10 0
-cd_c_out c2 pB 20 0 15 10 0
-cd_c_out c3 pB 20 0 15 10 0
-cd_c_out c4 pB 20 0 15 10 0
-c1 DpB pB 5 0 15 0 0
-c2 DpB pB 5 0 15 0 0
-c3 DpB pB 5 0 15 0 0
-c4 DpB pB 5 0 15 0 0
+A
+B
+SC A 2
+PE B 2
+O(A) cd_a_in A 20 0 10 7 0
+O(A) cd_b_in A 20 0 10 7 0
+O(A) cd_c_in A 20 0 10 10 0
+cd_a_in cd_a_out A 20 100 0 0 0
+cd_b_in cd_b_out A 20 100 0 0 0
+cd_c_in cd_c_out A 10 10 0 0 0
+cd_a_out c1 A 20 0 15 10 0
+cd_a_out c2 A 20 0 15 10 0
+cd_a_out c3 A 20 0 15 10 0
+cd_a_out c4 A 20 0 15 10 0
+cd_b_out c1 A 20 0 15 10 0
+cd_b_out c2 A 20 0 15 10 0
+cd_b_out c3 A 20 0 15 10 0
+cd_b_out c4 A 20 0 15 10 0
+cd_c_out c1 A 20 0 15 10 0
+cd_c_out c2 A 20 0 15 10 0
+cd_c_out c3 A 20 0 15 10 0
+cd_c_out c4 A 20 0 15 10 0
+c1 D(A) A 5 0 15 10 0
+c2 D(A) A 5 0 15 10 0
+c3 D(A) A 5 0 15 10 0
+c4 D(A) A 5 0 15 10 0
+O(B) cd_a_in B 20 0 10 7 0
+O(B) cd_b_in B 20 0 10 7 0
+O(B) cd_c_in B 20 0 10 10 0
+cd_a_in cd_a_out B 20 100 0 0 0
+cd_b_in cd_b_out B 20 100 0 0 0
+cd_c_in cd_c_out B 10 10 0 0 0
+cd_a_out c1 B 20 0 15 10 0
+cd_a_out c2 B 20 0 15 10 0
+cd_a_out c3 B 20 0 15 10 0
+cd_a_out c4 B 20 0 15 10 0
+cd_b_out c1 B 20 0 15 10 0
+cd_b_out c2 B 20 0 15 10 0
+cd_b_out c3 B 20 0 15 10 0
+cd_b_out c4 B 20 0 15 10 0
+cd_c_out c1 B 20 0 15 10 0
+cd_c_out c2 B 20 0 15 10 0
+cd_c_out c3 B 20 0 15 10 0
+cd_c_out c4 B 20 0 15 10 0
+c1 D(B) B 5 0 15 0 0
+c2 D(B) B 5 0 15 0 0
+c3 D(B) B 5 0 15 0 0
+c4 D(B) pB 5 0 15 0 0
 
 M N K A C
 linha única com um binário para cada UF, sendo 1 para UF com crédito presumido e 0 para UF sem crédito presumido
